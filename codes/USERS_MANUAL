@@ -1,0 +1,37 @@
+***********************************STEP_WISE GUIDE TO USE "largeint" library*************************************
+
+STEP 1: Copy the 'Largeint.h' header file from "Header_file" directory and paste it into 'usr/include' directory of your system.
+
+STEP 2: Copy the 'liblargeint.a' archivied file from "library" directory and paste it into 'usr/lib' directory of your system.
+
+STEP 3: The main program (say 'mainf.c') may be kept in any directory of the user and the compilation is done according to the instructions given below.
+        
+     **NOTE: If you are going to use 'Isprime' function of our library,then you must keep 'prime_tab.txt' file in the same directory in which main program is kept.**
+      
+        Type following commands
+	i.)	- $ gcc -Wall mainf.c /usr/lib/liblargeint.a -o mainf 
+					or
+		- $ gcc -Wall mainf.c -llargeint.a -o mainf 
+	ii.)	- $ ./mainf
+			
+	for e.g.	   
+		    Enter 1st number:12345
+                    Enter 2nd number:-23
+
+                    The 1st number is :
+			12345
+
+		    The 2nd number is :
+			-23
+
+
+		    Sum=12322
+
+		    Difference=12368
+
+		    product=-283935
+		    Quotient=-536
+		    Remainder=17
+		    modulus of 1st and 2nd number:17
+		    NOT PRIME
+
